@@ -1,223 +1,222 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  header {
-    border: 2px solid #1c1c1c;
-    width: 80%;
-    margin: 20px auto auto auto;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    height: 30px;
-    padding-left: 10px;
-  }
-  
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  border: 2px solid #1c1c1c;
+  width: 80%;
+  margin: 20px auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.navHeader {
+  font-size: 20px;
+}
+
+.navUl {
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.list:nth-child(1) {
+  border-right: 2px solid #111;
+  width: 30px;
+}
+
+.list:nth-child(2) {
+  border-right: 2px solid #111;
+  width: 60px;
+}
+
+.addNew.list1 {
+  color: blue;
+}
+
+.list-main.list1 {
+  color: blue;
+}
+
+.date-time {
+  display: flex;
+  width: 80%;
+  margin: 20px auto auto auto;
+  justify-content: right;
+}
+
+#dateTime {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.awesomeBooks {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: none;
+}
+
+.bookDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.books {
+  display: none;
+  margin: auto;
+  width: 80%;
+  border: 2px solid black;
+}
+
+.bookForm {
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: right;
+}
+
+.add {
+  padding: 5px;
+  box-shadow: #1c1c1c 2px 2px;
+}
+
+.form-heading {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.bookTitleAuthor {
+  font-size: 14px;
+}
+
+.title {
+  width: 100%;
+  padding: 3px;
+}
+
+.author {
+  width: 100%;
+  padding: 3px;
+}
+
+.delete {
+  padding: 4px 2px;
+  box-shadow: #1c1c1c 3px 3px;
+}
+
+.newBook:nth-child(even) {
+  background-color: #fff;
+}
+
+.newBook:nth-child(odd) {
+  background-color: #eee;
+}
+
+.hidy {
+  display: none;
+}
+
+.by {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact {
+  display: none;
+  font-family: sans-serif;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.contactHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contactParagraph {
+  font-weight: 600;
+}
+
+.contactUl {
+  list-style-type: none;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  height: 30px;
+  width: 100%;
+}
+
+.footerDiv {
+  width: 80%;
+  margin: auto;
+  border: 2px solid #111;
+  font-family: sans-serif;
+}
+
+.footerHeader {
+  margin-left: 20px;
+}
+
+@media (max-width: 550px) {
   .navHeader {
-    font-size: 20px;
-  }
-  
-  .navUl {
-    padding-right: 10px;
     font-size: 14px;
+  }
+
+  ul {
+    padding-right: 10px;
+    font-size: 10px;
     font-weight: 700;
     gap: 20px;
     list-style-type: none;
     display: flex;
     align-items: center;
   }
-  
+
   .list {
     cursor: pointer;
   }
-  
+
   .list:nth-child(1) {
     border-right: 2px solid #111;
-    width: 30px;
+    width: 20px;
   }
-  
+
   .list:nth-child(2) {
     border-right: 2px solid #111;
-    width: 60px;
-  }
-  
-  .addNew.list1 {
-    color: blue;
-  }
-  
-  .list-main.list1 {
-    color: blue;
+    width: 42px;
   }
 
-  .date-time {
-    display: flex;
-    width: 80%;
-    margin: 20px auto auto auto;
-    justify-content: right;
+  .list:nth-child(3) {
+    width: 30px;
   }
-
-  #dateTime {
-    display: flex;
-    font-size: 14px;
-    font-weight: 700;
-  }
-  
-  .awesomeBooks {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-    display: none;
-  }
-  
-  .bookDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 5%;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-  
-  .books {
-    display: none;
-    margin: auto;
-    width: 80%;
-    border: 2px solid black;
-  }
-  
-  .bookForm {
-    padding-top: 20px;
-    width: 40%;
-    margin: auto;
-    display: none;
-  }
-  
-  .btn {
-    display: flex;
-    justify-content: right;
-  }
-  
-  .add {
-    padding: 5px;
-    box-shadow: #1c1c1c 2px 2px;
-  }
-  
-  .form-heading {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  .bookTitleAuthor {
-    font-size: 14px;
-  }
-  
-  .title {
-    width: 100%;
-    padding: 3px;
-  }
-  
-  .author {
-    width: 100%;
-    padding: 3px;
-  }
-  
-  .delete {
-    padding: 4px 2px;
-    box-shadow: #1c1c1c 3px 3px;
-  }
-  
-  .newBook:nth-child(even) {
-    background-color: #fff;
-  }
-  
-  .newBook:nth-child(odd) {
-    background-color: #eee;
-  }
-  
-  .hidy {
-    display: none;
-  }
-  
-  .by {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .contact {
-    display: none;
-    font-family: sans-serif;
-    margin-top: 30px;
-    justify-content: center;
-  }
-  
-  .contactHeader {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .contactParagraph {
-    font-weight: 600;
-  }
-  
-  .contactUl {
-    list-style-type: none;
-    font-weight: 600;
-    margin-top: 30px;
-  }
-  
-  footer {
-    position: absolute;
-    bottom: 5px;
-    height: 30px;
-    width: 100%;
-  }
-  
-  .footerDiv {
-    width: 80%;
-    margin: auto;
-    border: 2px solid #111;
-    font-family: sans-serif;
-  }
-  
-  .footerHeader {
-    margin-left: 20px;
-  }
-  
-  @media (max-width: 550px) {
-    .navHeader {
-      font-size: 14px;
-    }
-  
-    ul {
-      padding-right: 10px;
-      font-size: 10px;
-      font-weight: 700;
-      gap: 20px;
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-    }
-  
-    .list {
-      cursor: pointer;
-    }
-  
-    .list:nth-child(1) {
-      border-right: 2px solid #111;
-      width: 20px;
-    }
-  
-    .list:nth-child(2) {
-      border-right: 2px solid #111;
-      width: 42px;
-    }
-  
-    .list:nth-child(3) {
-      width: 30px;
-    }
-  }
-  
+}

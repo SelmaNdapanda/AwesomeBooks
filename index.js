@@ -44,6 +44,7 @@ const addNew = document.querySelector('.addNew');
 const bookForm = document.querySelector('.bookForm');
 const contact = document.querySelector('.contactUs');
 const contactUs = document.querySelector('.contact');
+const dateTime = document.querySelector('#dateTime');
 
 list.addEventListener('click', () => {
   // list.classList.toggle('list1')
@@ -83,7 +84,7 @@ contact.addEventListener('click', () => {
 });
 
 const currentTime = () => {
-    const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-    dateTime.innerHTML = currentDateTime;
+  const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  dateTime.innerHTML = currentDateTime;
 };
 setInterval(currentTime, 500);
