@@ -1,5 +1,6 @@
 import Store from './modules/store.js';
 import UI from './modules/ui.js';
+import { DateTime } from './modules/date.js';
 
 class Book {
   constructor(title, author, id = Math.floor(Math.random() * 1000000)) {
@@ -80,3 +81,9 @@ contact.addEventListener('click', () => {
   awesomeBooks.style.display = 'none';
   books.style.display = 'none';
 });
+
+const currentTime = () => {
+    const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+    dateTime.innerHTML = currentDateTime;
+};
+setInterval(currentTime, 500);

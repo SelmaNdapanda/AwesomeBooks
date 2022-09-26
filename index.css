@@ -49,6 +49,19 @@
   .list-main.list1 {
     color: blue;
   }
+
+  .date-time {
+    display: flex;
+    width: 80%;
+    margin: 20px auto auto auto;
+    justify-content: right;
+  }
+
+  #dateTime {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+  }
   
   .awesomeBooks {
     margin-top: 50px;
